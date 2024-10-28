@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>web gank博客</title>
   
+  <subtitle>web gank`s Blog</subtitle>
+  <link href="https://web-gank.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
-  
-  <link href="http://example.com/"/>
+  <link href="https://web-gank.github.io/"/>
   <updated>2024-10-10T14:44:45.057Z</updated>
-  <id>http://example.com/</id>
+  <id>https://web-gank.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>web-gank</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/post/4a17b156.html"/>
-    <id>http://example.com/post/4a17b156.html</id>
+    <link href="https://web-gank.github.io/post/4a17b156"/>
+    <id>https://web-gank.github.io/post/4a17b156</id>
     <published>2024-10-10T14:42:51.472Z</published>
     <updated>2024-10-10T14:44:45.057Z</updated>
     
@@ -30,23 +30,23 @@
     
     
     
-    <category term="博客Blog" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2Blog/"/>
+    <category term="博客Blog" scheme="https://web-gank.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/"/>
     
-    <category term="hexo" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2Blog/hexo/"/>
+    <category term="hexo" scheme="https://web-gank.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/hexo/"/>
     
-    <category term="new-yilia" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2Blog/new-yilia/"/>
+    <category term="new-yilia" scheme="https://web-gank.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/new-yilia/"/>
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://web-gank.github.io/tags/hexo/"/>
     
-    <category term="new-yilia" scheme="http://example.com/tags/new-yilia/"/>
+    <category term="new-yilia" scheme="https://web-gank.github.io/tags/new-yilia/"/>
     
   </entry>
   
   <entry>
     <title>math</title>
-    <link href="http://example.com/post/a927044d.html"/>
-    <id>http://example.com/post/a927044d.html</id>
+    <link href="https://web-gank.github.io/post/a927044d"/>
+    <id>https://web-gank.github.io/post/a927044d</id>
     <published>2024-10-10T14:42:51.472Z</published>
     <updated>2024-10-10T14:44:45.059Z</updated>
     
@@ -58,10 +58,10 @@
     
     
     
-    <category term="math" scheme="http://example.com/categories/math/"/>
+    <category term="math" scheme="https://web-gank.github.io/categories/math/"/>
     
     
-    <category term="math" scheme="http://example.com/tags/math/"/>
+    <category term="math" scheme="https://web-gank.github.io/tags/math/"/>
     
   </entry>
   
