@@ -6,7 +6,7 @@
   <link href="https://web-gank.github.io/atom.xml" rel="self"/>
   
   <link href="https://web-gank.github.io/"/>
-  <updated>2024-10-10T14:44:45.057Z</updated>
+  <updated>2024-10-29T15:27:34.954Z</updated>
   <id>https://web-gank.github.io/</id>
   
   <author>
@@ -17,51 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://web-gank.github.io/post/4a17b156"/>
-    <id>https://web-gank.github.io/post/4a17b156</id>
-    <published>2024-10-10T14:42:51.472Z</published>
-    <updated>2024-10-10T14:44:45.057Z</updated>
+    <title>Pi Network全自动脚本（一）———— 获取自动登录token</title>
+    <link href="https://web-gank.github.io/post/c9ea7a44"/>
+    <id>https://web-gank.github.io/post/c9ea7a44</id>
+    <published>2024-10-29T14:10:15.000Z</published>
+    <updated>2024-10-29T15:27:34.954Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<h1 id="Pi币批量挖矿攻略"><a href="#Pi币批量挖矿攻略" class="headerlink" title="Pi币批量挖矿攻略"></a>Pi币批量挖矿攻略</h1><p>近期，<strong>Pi币</strong>的价格持续上涨，圈内一些有自己玩法的大佬们也因此赚得盆满钵满。今天，我想和大家分享一下这些Pi友是如何批量挖币赚钱的。</p><span id="more"></span><img src="/post/c9ea7a44/pi_price.png" class="" title="pi币价格"><h2 id="解决关键问题"><a href="#解决关键问题" class="headerlink" title="解决关键问题"></a>解决关键问题</h2><p>要想挖到大量的Pi币，首先需要解决两个关键问题：</p><ol><li><p><strong>大量国外过K账号</strong>：<br>由于国内账号因为一些众所周知的原因，KYC（身份验证）常常被卡住。即便通过了KYC，也无法映射。解决这个问题的方法很简单：<strong>花钱购买国外过K账号</strong>。</p></li><li><p><strong>提升挖矿速率</strong>：<br>随着Pi用户的激增，挖矿速率已经大幅降低，正常情况下，一个月可能都挖不到几个币。因此，提升速率的方式只能是提高奖励。<br>通过为账号绑定节点来获取节点奖励，绑定节点的账号每天可以挖到十几个币。至于如何为大量账号绑定节点，这里就不细说了，懂这个玩法的人都有渠道来解决这两个问题。</p></li></ol><h2 id="自动化挖矿"><a href="#自动化挖矿" class="headerlink" title="自动化挖矿"></a>自动化挖矿</h2><p>假设你已经解决了上述两个问题，那么接下来就是使用<strong>脚本</strong>，全自动24小时挖矿。一旦启动上千个账号，就如同开了一台印钞机。App里的所有操作，包括：</p><ul><li>点击闪电</li><li>添加安全圈</li><li>设置锁仓</li><li>创建钱包</li><li>绑定钱包</li><li>……</li></ul><p>都可以通过脚本自动完成。对此，杠精们可能会质疑脚本会被检测的问题，但这套模式早已被验证可行，早期参与的玩家已经实现了财务自由。</p><h2 id="脚本分享"><a href="#脚本分享" class="headerlink" title="脚本分享"></a>脚本分享</h2><p>接下来，我将与大家分享全自动脚本的第一步：<strong>自动获取账号token</strong>。有了token后，你就可以用它进行后续的所有操作。<strong>Talk is cheap，接下来是代码部分</strong>。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 账号密码</span></span><br><span class="line">data = [</span><br><span class="line">    &#123;<span class="string">&quot;phone_number&quot;</span>: <span class="string">&quot;+13888888888&quot;</span>, <span class="string">&quot;password&quot;</span>: <span class="string">&quot;123456&quot;</span>&#125;,</span><br><span class="line">]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_token</span>(<span class="params">account</span>):</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        url = <span class="string">&#x27;https://socialchain.app/api/password_sign_in&#x27;</span></span><br><span class="line">        headers = &#123;</span><br><span class="line">            <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Linux; Android 7.1.2; SM-G977N Build/LMY48Z; wv) AppleWebKit/537.36 &#x27;</span></span><br><span class="line">                          <span class="string">&#x27;(KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;application/json&#x27;</span>,</span><br><span class="line">        &#125;</span><br><span class="line">        response = requests.post(url, headers=headers, json=account)</span><br><span class="line">        <span class="built_in">print</span>(response.json()[<span class="string">&#x27;credentials&#x27;</span>][<span class="string">&#x27;access_token&#x27;</span>])</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(e)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">for</span> account <span class="keyword">in</span> data:</span><br><span class="line">        get_token(account)</span><br></pre></td></tr></table></figure> <p>运行代码后就拿到了这个账号对应的token </p><blockquote><p>TCEkPPNYv0U3xyTsiYqvvPv5UYEkU2NM-4uHjiihpGg</p></blockquote>]]></content>
     
     
-    
-    <category term="博客Blog" scheme="https://web-gank.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/"/>
-    
-    <category term="hexo" scheme="https://web-gank.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/hexo/"/>
-    
-    <category term="new-yilia" scheme="https://web-gank.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/new-yilia/"/>
-    
-    
-    <category term="hexo" scheme="https://web-gank.github.io/tags/hexo/"/>
-    
-    <category term="new-yilia" scheme="https://web-gank.github.io/tags/new-yilia/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>math</title>
-    <link href="https://web-gank.github.io/post/a927044d"/>
-    <id>https://web-gank.github.io/post/a927044d</id>
-    <published>2024-10-10T14:42:51.472Z</published>
-    <updated>2024-10-10T14:44:45.059Z</updated>
-    
-    <content type="html"><![CDATA[<p>如 $\lim_{x \to 0} \frac{\sin x}{x}$ 渲染的是</p><p>$$<br>\begin{eqnarray}<br> \lim_{x \to 0} \frac{\sin x + x^2 + x^3}{x} &amp; &#x3D; &amp; \lim_{x \to 0} \frac{\sin x }{x} + \lim_{x \to 0} \frac{x^2 }{x} + \lim_{x \to 0}\frac{x^3}{x}<br>\\ &amp; &#x3D; &amp; \lim_{x \to 0}\frac{\sin x}{x}<br>\\ &amp; &#x3D; &amp; 1<br>\end{eqnarray}<br>$$</p><span id="more"></span><p>斐波那契数列$A_n&#x3D;A_{n-1}+A_{n-2}$,前后两项的比值逐渐收敛到黄金分割比例<br>$$\lim_{n\to \infty}\frac{A_{n-1}}{A_n}&#x3D;\frac{\sqrt{5}-1}{2}.$$</p><p>因式分解<br>$$\begin{split}(x−1)(x−3)&amp;&#x3D;x^2−4x+3 \<br>&amp;&#x3D;x^2−4x+4−1 \<br>&amp;&#x3D;(x−2)^2−1<br>\end{split}<br>$$</p><p>狄利克雷函数</p><p>$$<br>D(x)&#x3D;<br>\begin{cases}<br>1,&amp; x \in Q \<br>0,&amp; x \notin Q<br>\end{cases}<br>$$</p><p>高斯公式<br>$$<br>\iiint_{\Omega}\left(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\right) d v&#x3D;\iint_{\Sigma} P d y d z+Q d z d x+R d x d y<br>$$</p><h2 id="物理公式"><a href="#物理公式" class="headerlink" title="物理公式"></a>物理公式</h2><ul><li>牛顿第一定律: $\sum \vec{F}_{i}&#x3D;\frac{\mathrm{d} \vec{v}}{\mathrm{d} t}&#x3D;0$</li><li>牛顿第二定律: $\vec{F}&#x3D;\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \frac{\mathrm{d} \vec{v}}{\mathrm{d} t}&#x3D;\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \vec{a}&#x3D;\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \frac{\mathrm{d}^{2} \vec{r}}{\mathrm{d} t^{2}}$</li><li>牛顿第三定律: $\overrightarrow{F_{12}}&#x3D;-\overrightarrow{F_{21}}$</li><li>质能守恒: $E&#x3D;mc^2$</li></ul><h2 id="化学公式"><a href="#化学公式" class="headerlink" title="化学公式"></a>化学公式</h2><p>离子反应与沉淀: $\ce{SO4^2- + Ba^2+ -&gt; BaSO4 v}$</p><h2 id="生物公式"><a href="#生物公式" class="headerlink" title="生物公式"></a>生物公式</h2><p>光合作用<br>范德蒙行列式<br>$$D_{n-1}&#x3D;\left|\begin{array}{cccc}<br>1 &amp; 1 &amp; \dots &amp; 1 \<br>x_{2} &amp; x_{3} &amp; \dots &amp; x_{n} \<br>\vdots &amp; \vdots &amp; &amp; \vdots \<br>x_{2}^{n-2} &amp; x_{3}^{n-2} &amp; \dots &amp; x_{n}^{n-2}<br>\end{array}\right|&#x3D;\prod_{2 \leq j&lt;i \leq n}\left(x_{i}-x_{j}\right)$$</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;如 $&#92;lim_{x &#92;to 0} &#92;frac{&#92;sin x}{x}$ 渲染的是&lt;/p&gt;
-&lt;p&gt;$$&lt;br&gt;&#92;begin{eqnarray}&lt;br&gt; &#92;lim_{x &#92;to 0} &#92;frac{&#92;sin x + x^2 + x^3}{x} &amp;amp; &amp;#x3D; &amp;amp; &#92;lim_{x &#92;to 0} &#92;frac{&#92;sin x }{x} + &#92;lim_{x &#92;to 0} &#92;frac{x^2 }{x} + &#92;lim_{x &#92;to 0}&#92;frac{x^3}{x}&lt;br&gt;&#92;&#92; &amp;amp; &amp;#x3D; &amp;amp; &#92;lim_{x &#92;to 0}&#92;frac{&#92;sin x}{x}&lt;br&gt;&#92;&#92; &amp;amp; &amp;#x3D; &amp;amp; 1&lt;br&gt;&#92;end{eqnarray}&lt;br&gt;$$&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Pi币批量挖矿攻略&quot;&gt;&lt;a href=&quot;#Pi币批量挖矿攻略&quot; class=&quot;headerlink&quot; title=&quot;Pi币批量挖矿攻略&quot;&gt;&lt;/a&gt;Pi币批量挖矿攻略&lt;/h1&gt;&lt;p&gt;近期，&lt;strong&gt;Pi币&lt;/strong&gt;的价格持续上涨，圈内一些有自己玩法的大佬们也因此赚得盆满钵满。今天，我想和大家分享一下这些Pi友是如何批量挖币赚钱的。&lt;/p&gt;</summary>
     
     
     
-    <category term="math" scheme="https://web-gank.github.io/categories/math/"/>
+    <category term="Pi NetWork脚本系列" scheme="https://web-gank.github.io/categories/Pi-NetWork%E8%84%9A%E6%9C%AC%E7%B3%BB%E5%88%97/"/>
     
     
-    <category term="math" scheme="https://web-gank.github.io/tags/math/"/>
+    <category term="Pi Network" scheme="https://web-gank.github.io/tags/Pi-Network/"/>
     
   </entry>
   
