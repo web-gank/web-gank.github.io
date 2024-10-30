@@ -325,7 +325,7 @@ var _hmt = _hmt || [];
 	&nbsp;
 	2024-10-29</time>
 	
-	<!-- busuanzi阅读量统计 -->
+	<!-- busuanzi阅读量统计
 	
 	<span>
 		&nbsp; &nbsp; &nbsp;
@@ -334,17 +334,17 @@ var _hmt = _hmt || [];
 		<span class="post-meta-item-text">次</span>
 	</span>
 	
-	
+	-->
 	
     <!-- waline阅读量统计 -->
-	<!-- 
+	
 	<span>
 		&nbsp; &nbsp; &nbsp;
 		<i class="fa fa-eye" aria-hidden="true"></i>
 		&nbsp;
 		<span class="waline-pageview-count" data-path="/post/c9ea7a44.html"><i class="fa fa-spinner fa-spin"></i></span>
 	</span>
-	 -->
+	
 
 </a>
 
@@ -650,7 +650,7 @@ var _hmt = _hmt || [];
 
 	Waline.init({
 	  el: '#waline',
-	  serverURL: 'your_waline_comments_url',
+	  serverURL: 'https://hexo-waline-pi.vercel.app/',
 	  locale,
 	  login: 'enable',
 	  lang: 'zh-CN ',
@@ -660,7 +660,7 @@ var _hmt = _hmt || [];
 		'https://unpkg.com/@waline/emojis@1.1.0/weibo',
 		'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
 	  ],
-	  wordLimit: 0,
+	  wordLimit: 500,
 	  pageSize: 10,
 	  imageUploader: false,
 	  pageview: true,
